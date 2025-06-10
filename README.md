@@ -84,4 +84,35 @@ BQ_TABLE=your_bq_export_table
 
 python deployment/deploy.py --create
 
+---
+💬 Example Queries
+Try natural language prompts like:
 
+“Give me a cost summary for the last 30 days.”
+
+“Which GCP project has exceeded its budget this month?”
+
+“How can we optimize our Compute Engine usage?”
+
+---
+🧪 Run Tests
+
+pytest tests/
+pytest eval/
+
+---
+
+📈 Roadmap
+ Cost summary retrieval via BigQuery
+
+ Budget alert detection agent
+
+ Static recommendations engine
+
+ Dynamic usage pattern analysis
+
+ Real-time anomaly detection
+
+ Slack/Gmail notification integration
+
+ Multi-agent approval workflows
