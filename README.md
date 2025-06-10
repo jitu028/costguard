@@ -66,8 +66,22 @@ costguard/
 └── poetry.lock
 
 
+---
 
-Let me know if you'd like:
-- a `CONTRIBUTING.md` guide
-- Markdown badges (e.g. version, license, build)
-- Example screenshots or GIFs of usage (CLI or web UI)
+git clone https://github.com/<your-username>/costguard.git
+cd costguard
+
+python3 -m venv .adk-venv
+source .adk-venv/bin/activate
+
+poetry install --with deployment
+
+GCP_PROJECT=your-gcp-project-id
+GCP_LOCATION=us-central1
+GCP_BUCKET=your-gcs-staging-bucket
+BQ_DATASET=your_bq_dataset
+BQ_TABLE=your_bq_export_table
+
+python deployment/deploy.py --create
+
+
