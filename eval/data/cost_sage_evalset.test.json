@@ -1,0 +1,14 @@
+[
+  {
+    "input": "Show me our total GCP cost breakdown for the month",
+    "expected_contains": ["Total cost", "Top 5 services"]
+  },
+  {
+    "input": "Are there any projects exceeding budget?",
+    "expected_contains": ["Budget exceeded"]
+  },
+  {
+    "input": "Suggest cost optimizations",
+    "expected_contains": ["idle", "autoscaling", "committed use"]
+  }
+]
