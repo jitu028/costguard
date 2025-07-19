@@ -13,10 +13,8 @@ cost_summary_agent = Agent(
     model=MODEL,
     name="cost_summary_agent",
     instruction=prompt.COST_SUMMARY_PROMPT,
-
     tools=[
         bigquery_utils.get_cost_summary,
-        bigquery_utils.get_total_spend,
         bigquery_utils.get_total_spend,
         bigquery_utils.get_high_cost_projects,
         bigquery_utils.get_cost_by_region,
